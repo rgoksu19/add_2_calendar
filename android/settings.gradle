@@ -1,1 +1,18 @@
 rootProject.name = 'add_2_calendar_new'
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS) // ✅ önerilen
+    repositories {
+        google()
+        mavenCentral()
+        // özel bir repo gerekiyorsa buraya ekle
+        // maven { url "https://developer.huawei.com/repo/" }
+    }
+}
